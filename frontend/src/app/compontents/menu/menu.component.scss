@@ -1,0 +1,35 @@
+.topnav
+{
+  background-color: #F5DEB3;
+  text-align: center;            /*to jest wyrownanie na srodek!!!*/
+  border: 3px solid black;
+}
+
+.menu
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  min-height: 35px;
+  line-height:200%;  /*wyrównianie w pionie*/
+}
+
+.menu > li /*chodzi o pojedynczy list item w środku*/
+{
+  display: inline-block; /*poziome*/
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 2px dotted black;
+}
+
+.menu > li:first-child
+{
+  border-left: 2px dotted black;
+}
+
+.menu > li:hover
+{
+  color: #D2B48C;
+  cursor: pointer;
+}
