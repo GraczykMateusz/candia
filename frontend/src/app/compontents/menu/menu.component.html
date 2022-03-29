@@ -1,42 +1,51 @@
-<mat-toolbar>
+<mat-toolbar fxFlex="column" fxLayoutAlign="space-between center" class="sticky">
+  <div fxFlex>
+    Kocimiętka
+  </div>
+  <div fxFlex style="text-align: right">
+    <div class="search-bar">
+      <input placeholder="{{placeholderText}}" matInput>
 
-  <mat-form-field appearance="fill">
-    <input placeholder="{{placeholderText}}" matInput>
-  </mat-form-field>
+      <mat-select [formControl]="position">
+        <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
+          {{positionOption}}
+        </mat-option>
+      </mat-select>
 
-  <mat-form-field appearance="fill">
-    <mat-select [formControl]="position">
-      <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
-        {{positionOption}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>search_icon</mat-icon>
+      </button>
+    </div>
 
-  <button mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon>search_icon</mat-icon>
-  </button>
-
-  <button mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
-  </button>
-
-  <button mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
-  </button>
-
-  <button mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon>account_circle</mat-icon>
-  </button>
-
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <span>Zaloguj się</span>
-      <mat-icon>login</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
     </button>
-    <button mat-menu-item disabled>
-      <span>Wyloguj się</span>
-      <mat-icon>logout</mat-icon>
-    </button>
-  </mat-menu>
 
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span>Zaloguj się</span>
+        <mat-icon>login</mat-icon>
+      </button>
+      <button mat-menu-item>
+        <span>Zarejestruj się</span>
+        <mat-icon>login</mat-icon>
+      </button>
+      <button mat-menu-item>
+        <span>Zamówienia i zwroty</span>
+        <mat-icon>login</mat-icon>
+      </button>
+      <button mat-menu-item>
+        <span>Moje dane</span>
+        <mat-icon>login</mat-icon>
+      </button>
+    </mat-menu>
+  </div>
 </mat-toolbar>

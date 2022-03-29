@@ -17,6 +17,8 @@ import {MatInputModule} from "@angular/material/input";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatExpansionModule} from "@angular/material/expansion";
+import { InformationsComponent } from './compontents/informations/informations.component';
 
 @NgModule({
   declarations: [
@@ -24,23 +26,25 @@ import {ReactiveFormsModule} from "@angular/forms";
     DashboardComponent,
     MenuComponent,
     FooterComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    InformationsComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FlexLayoutModule,
-    ReactiveFormsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatInputModule,
-    MatBadgeModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FlexLayoutModule,
+        ReactiveFormsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatInputModule,
+        MatBadgeModule,
+        MatSelectModule,
+        MatExpansionModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

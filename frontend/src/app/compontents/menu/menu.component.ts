@@ -12,10 +12,12 @@ export class MenuComponent implements AfterContentInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
+  panelOpenState = false;
+
   placeholderText: string = '';
   placeholderTextOptions: string[] = [
     'Czego szukasz?',
-    'Zadbaj o swoje ciało',
+    'Zadbaj o swoje ciało ❤',
     'Czas na relaks',
     'Odprężająca kąpiel?',
     'Olejek eteryczny',
@@ -67,7 +69,8 @@ export class MenuComponent implements AfterContentInit {
   }
 
   private getRandomPlaceholderText(): string {
-    const index = Math. floor(Math.random() * (this.placeholderTextOptions.length + 1));
+    const index = Math.floor(Math.random() * this.placeholderTextOptions.length);
+    console.log(index);
     return this.placeholderTextOptions[index];
   }
 }
