@@ -1,3 +1,25 @@
-.router-outlet-container {
-  height: calc(100vh - 64px);
+//router-outlet-container {
+//  height: calc(100vh - 64px);
+//  display: flex;
+//}
+
+.shop-cart-container {
+  position: sticky;
+  bottom: 8px;
+  text-align: right;
+  margin-right: 8px;
+
+}
+
+.shop-cart-container button {
+  width: 45px;
+  height: 45px;
+}
+
+.mat-fab::ng-deep .mat-button-wrapper::ng-deep {
+  padding: 0;
+}
+
+.shop-cart-container mat-icon {
+  transform: scale(1.2);
 }

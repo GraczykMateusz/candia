@@ -1,10 +1,15 @@
 <div fxLayout="column" fxLayoutAlign="center">
   <app-menu></app-menu>
   <mat-divider></mat-divider>
-  <div class="router-outlet-container">
-    <router-outlet></router-outlet>
-  </div>
-<!--  <app-newsletter></app-newsletter>-->
+  <router-outlet></router-outlet>
+  <app-newsletter></app-newsletter>
 <!--  <app-informations></app-informations>-->
 <!--  <app-footer></app-footer>-->
+
+</div>
+
+<div *ngIf="true" class="shop-cart-container">
+  <button mat-fab color="primary">
+    <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
+  </button>
 </div>
