@@ -1,11 +1,10 @@
 mat-card {
   width: 260px;
-  height: 300px;
+  height: 305px;
 }
 
 mat-card mat-card-header {
   font-size: 14px;
-  font-family: Lato;
   text-align: center;
   display: inherit;
   text-overflow: ellipsis;
@@ -17,7 +16,7 @@ mat-card img {
   margin: auto;
   padding-bottom: 18px;
   width: 75%;
-  height: calc(75% - 40px);
+  height: calc(75% - 45px);
 }
 
 .product {
@@ -41,7 +40,13 @@ mat-card img {
 }
 
 .star-rating-number {
-  vertical-align: middle;
+  position: fixed;
+  text-align: left;
+  margin-left: 2px;
+  width: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 mat-card-actions .mat-button {
@@ -57,7 +62,7 @@ mat-card-actions .mat-button {
 
 .price-whole,
 {
-  font-size: 18px;
+  font-size: 19px;
   position: relative;
   right: -3px;
 }
@@ -66,7 +71,7 @@ mat-card-actions .mat-button {
 .price-fraction {
   font-size: 10px;
   position: relative;
-  top: -5px;
+  top: -6px;
 }
 
 //1D85CAFF
