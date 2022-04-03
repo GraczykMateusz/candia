@@ -2,12 +2,17 @@
   <div *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8]">
     <div class="product">
       <mat-card>
-        <span style="width: 50vw;">
-          Nowy
-        </span>
-        <span style="text-align: right; width: 50%;">
-          79.99
-        </span>
+        <div class="price">
+          <span class="price-whole">
+            79
+          </span>
+          <span class="price-fraction">
+            99
+          </span>
+          <span class="price-symbol">
+            zł
+          </span>
+        </div>
         <img mat-card-image src="assets/product.jpg">
         <mat-card-header>PRODUCTPRODUCTPRODUCTPRODUCTPRODUCT</mat-card-header>
         <div class="star-rating">
@@ -16,6 +21,7 @@
           <mat-icon>star</mat-icon>
           <mat-icon>star_half</mat-icon>
           <mat-icon>star_border</mat-icon>
+          <span class="star-rating-number">(111)</span>
         </div>
         <mat-card-actions>
           <button mat-button>Dodaj do koszyka</button>
