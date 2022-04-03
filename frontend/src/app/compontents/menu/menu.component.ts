@@ -70,7 +70,6 @@ export class MenuComponent implements AfterContentInit {
 
   private getRandomPlaceholderText(): string {
     const index = Math.floor(Math.random() * this.placeholderTextOptions.length);
-    console.log(index);
     return this.placeholderTextOptions[index];
   }
 }
