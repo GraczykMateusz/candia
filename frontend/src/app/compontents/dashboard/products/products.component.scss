@@ -1,0 +1,21 @@
+img {
+  background-position-x: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+mat-card {
+  width: 250px;
+  height: 250px;
+}
+
+.product {
+  margin: 2vh;
+  transition: transform .2s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

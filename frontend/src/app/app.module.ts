@@ -19,6 +19,9 @@ import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatExpansionModule} from "@angular/material/expansion";
 import { InformationsComponent } from './compontents/informations/informations.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatDividerModule} from "@angular/material/divider";
+import { ProductsComponent } from './compontents/dashboard/products/products.component';
 
 @NgModule({
   declarations: [
@@ -27,24 +30,27 @@ import { InformationsComponent } from './compontents/informations/informations.c
     MenuComponent,
     FooterComponent,
     NewsletterComponent,
-    InformationsComponent
+    InformationsComponent,
+    ProductsComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        AppRoutingModule,
-        HttpClientModule,
-        FlexLayoutModule,
-        ReactiveFormsModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatMenuModule,
-        MatButtonModule,
-        MatInputModule,
-        MatBadgeModule,
-        MatSelectModule,
-        MatExpansionModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FlexLayoutModule,
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatInputModule,
+    MatBadgeModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatCardModule,
+    MatDividerModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
