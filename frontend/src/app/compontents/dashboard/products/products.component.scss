@@ -19,6 +19,32 @@ mat-card img {
   height: calc(75% - 45px);
 }
 
+mat-tab-group {
+  width: fit-content;
+  height: fit-content;
+}
+
+// fix automatically page scrolls to top
+// when switching between some tabs and
+// vertical scrollbar
+.fix-scrolls-to-top {
+  min-height: 100vh;
+}
+
+::ng-deep mat-tab-header {
+  align-self: center;
+}
+
+::ng-deep .mat-tab-label-content {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+  background-color: #3BAC44;
+}
+
 .product {
   margin: 2vh;
   transition: transform .2s;
@@ -28,10 +54,6 @@ mat-card img {
   transform: scale(1.05);
   cursor: pointer;
 }
-
-//.product:hover > mat-card mat-card-header {
-//  color: green;
-//}
 
 .star-rating {
   text-align: center;

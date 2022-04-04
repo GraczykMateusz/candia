@@ -22,6 +22,7 @@ import { InformationsComponent } from './compontents/informations/informations.c
 import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import { ProductsComponent } from './compontents/dashboard/products/products.component';
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -33,24 +34,25 @@ import { ProductsComponent } from './compontents/dashboard/products/products.com
     InformationsComponent,
     ProductsComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FlexLayoutModule,
-    ReactiveFormsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatInputModule,
-    MatBadgeModule,
-    MatSelectModule,
-    MatExpansionModule,
-    MatCardModule,
-    MatDividerModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FlexLayoutModule,
+        ReactiveFormsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatInputModule,
+        MatBadgeModule,
+        MatSelectModule,
+        MatExpansionModule,
+        MatCardModule,
+        MatDividerModule,
+        MatTabsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
