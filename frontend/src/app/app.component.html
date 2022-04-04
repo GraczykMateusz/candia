@@ -9,7 +9,7 @@
 </div>
 
 <div [@shopping-cart-animation]="showShoppingCart ? 'open' : 'close'" class="shop-cart-container">
-  <button [disabled]="!showShoppingCart" mat-fab color="primary">
+  <button [disabled]="!showShoppingCart" mat-fab color="primary" (click)="openDialog()">
     <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
   </button>
 </div>

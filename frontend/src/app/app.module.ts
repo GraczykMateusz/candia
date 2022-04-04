@@ -23,6 +23,8 @@ import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import { ProductsComponent } from './compontents/dashboard/products/products.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { ShoppingCartDialogComponent } from './compontents/shopping-cart-dialog/shopping-cart-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import {MatTabsModule} from "@angular/material/tabs";
     FooterComponent,
     NewsletterComponent,
     InformationsComponent,
-    ProductsComponent
+    ProductsComponent,
+    ShoppingCartDialogComponent
   ],
     imports: [
         BrowserModule,
@@ -51,7 +54,8 @@ import {MatTabsModule} from "@angular/material/tabs";
         MatExpansionModule,
         MatCardModule,
         MatDividerModule,
-        MatTabsModule
+        MatTabsModule,
+        MatDialogModule
     ],
   providers: [],
   bootstrap: [AppComponent]
