@@ -1,4 +1,9 @@
-img {
+.dashboard-img-container {
+  background-color: #f5f5f5;
+  width: 100%
+}
+
+.dashboard-img-container img {
   background-position-x: center;
   background-size: cover;
   width: 84%;

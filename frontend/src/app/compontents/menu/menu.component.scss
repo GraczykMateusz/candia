@@ -6,9 +6,17 @@ mat-select {
   width: 20%;
 }
 
-h1 {
-  font-family: Garamond sans-serif;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 21px;
+.page-name-container {
+  height: 50%;
+  width: 50%;
+}
+
+.page-name-container img {
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.menu-options {
+  text-align: right;
 }
