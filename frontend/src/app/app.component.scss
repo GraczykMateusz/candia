@@ -13,6 +13,7 @@
 .shop-cart-container button {
   width: 60px;
   height: 60px;
+  background-color: #1D85CA;
 }
 
 .mat-fab::ng-deep .mat-button-wrapper::ng-deep {
@@ -39,7 +40,7 @@
 .mat-mini-fab.mat-accent.mat-button-disabled,
 .mat-mini-fab.mat-warn.mat-button-disabled,
 .mat-mini-fab.mat-button-disabled.mat-button-disabled {
-  background-color: #3f51b5;
+  background-color: #1D85CA;
   color: #fff;
   width: 60px;
   height: 60px;
