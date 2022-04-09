@@ -5,18 +5,16 @@
     </div>
   </div>
   <div fxFlex class="menu-options">
+
     <div class="search-bar">
-      <input placeholder="{{placeholderText}}" matInput>
-
-      <mat-select [formControl]="position">
-        <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
-          {{positionOption}}
-        </mat-option>
-      </mat-select>
-
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>search_icon</mat-icon>
-      </button>
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="search-term" placeholder="{{placeholderText}}">
+          <button mat-icon-button class="search-button">
+            <mat-icon>search</mat-icon>
+          </button>
+        </div>
+      </div>
     </div>
 
     <button mat-icon-button [matMenuTriggerFor]="menu">

@@ -1,5 +1,6 @@
-.search-bar {
-  display: inline;
+mat-toolbar {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 mat-select {
@@ -19,4 +20,59 @@ mat-select {
 
 .menu-options {
   text-align: right;
+}
+
+mat-icon {
+  transform: scale(1.15);
+}
+
+.search-bar {
+  display: inline;
+  margin-right: 70px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search-term {
+  width: 100%;
+  border: 3px solid #63BB6A;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchTerm:focus {
+  color: #63BB6A;
+}
+
+.search-button {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #63BB6A;
+  background: #63BB6A;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+  width: 60%;
+  display: inline-block;
+}
+
+.search-button .mat-icon {
+  display: flex;
+  margin: auto;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
