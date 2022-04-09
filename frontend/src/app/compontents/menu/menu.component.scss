@@ -28,7 +28,7 @@ mat-icon {
 
 .search-bar {
   display: inline;
-  margin-right: 70px;
+  margin-right: 15px;
 }
 
 .search {
@@ -75,4 +75,35 @@ mat-icon {
 
 input:focus::placeholder {
   color: transparent;
+}
+
+.category {
+  width: 40%;
+  border: 3px solid #63BB6A;
+  border-right: none;
+  border-left: 1px solid #63BB6A;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+  display: inherit;
+  background-color: #fff;
+}
+
+.category mat-select {
+  width: 100%;
+  vertical-align: middle;
+  margin: auto;
+  display: flex;
+  font-size: 16px;
+}
+
+.buttons-frame {
+  border: 3px solid #63BB6A;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.buttons-frame button {
+  margin-left: 3px;
+  margin-right: 3px;
 }

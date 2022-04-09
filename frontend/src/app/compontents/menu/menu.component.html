@@ -1,15 +1,22 @@
 <mat-toolbar fxFlex="column" fxLayoutAlign="space-between center">
-  <div fxFlex>
+  <div fxFlex="45%">
     <div class="page-name-container">
       <img src="assets/page-name.png">
     </div>
   </div>
-  <div fxFlex class="menu-options">
+  <div fxFlex="50%" class="menu-options">
 
     <div class="search-bar">
       <div class="wrap">
         <div class="search">
           <input type="text" class="search-term" placeholder="{{placeholderText}}">
+          <div class="category">
+            <mat-select [formControl]="position" disableOptionCentering>
+              <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
+                {{positionOption}}
+              </mat-option>
+            </mat-select>
+          </div>
           <button mat-icon-button class="search-button">
             <mat-icon>search</mat-icon>
           </button>
@@ -17,35 +24,37 @@
       </div>
     </div>
 
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
-    </button>
+    <div class="buttons-frame">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
+      </button>
 
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
-    </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
+      </button>
 
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>account_circle</mat-icon>
-    </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
 
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <span>Zaloguj się</span>
-        <mat-icon>login</mat-icon>
-      </button>
-      <button mat-menu-item>
-        <span>Zarejestruj się</span>
-        <mat-icon>login</mat-icon>
-      </button>
-      <button mat-menu-item>
-        <span>Zamówienia i zwroty</span>
-        <mat-icon>login</mat-icon>
-      </button>
-      <button mat-menu-item>
-        <span>Moje dane</span>
-        <mat-icon>login</mat-icon>
-      </button>
-    </mat-menu>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <span>Zaloguj się</span>
+          <mat-icon>login</mat-icon>
+        </button>
+        <button mat-menu-item>
+          <span>Zarejestruj się</span>
+          <mat-icon>login</mat-icon>
+        </button>
+        <button mat-menu-item>
+          <span>Zamówienia i zwroty</span>
+          <mat-icon>login</mat-icon>
+        </button>
+        <button mat-menu-item>
+          <span>Moje dane</span>
+          <mat-icon>login</mat-icon>
+        </button>
+      </mat-menu>
+    </div>
   </div>
 </mat-toolbar>
