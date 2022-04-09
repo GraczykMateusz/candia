@@ -25,6 +25,7 @@ import { ProductsComponent } from './compontents/dashboard/products/products.com
 import {MatTabsModule} from "@angular/material/tabs";
 import { ShoppingCartDialogComponent } from './compontents/shopping-cart-dialog/shopping-cart-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import { PortraitsComponent } from './compontents/dashboard/portraits/portraits.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     NewsletterComponent,
     InformationsComponent,
     ProductsComponent,
-    ShoppingCartDialogComponent
+    ShoppingCartDialogComponent,
+    PortraitsComponent
   ],
     imports: [
         BrowserModule,
