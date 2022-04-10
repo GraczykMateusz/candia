@@ -1,7 +1,6 @@
 mat-toolbar {
   white-space: normal;
   height: fit-content;
-  padding: 20px;
 }
 
 .title {
@@ -18,4 +17,20 @@ mat-toolbar {
 .info-content {
   font-size: 14px;
   line-height: 22px;
+  font-family: Arial sans-serif;
+}
+
+.info-content i {
+  font-size: 20px;
+  color: #676767;
+  margin: 0 5px 0 5px;
+}
+
+.info-content-icons {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.info-content-and-icons-container {
+  height: fit-content;
 }
