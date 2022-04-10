@@ -1,0 +1,35 @@
+.background {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.newsletter-text-container {
+  margin: auto;
+}
+
+.newsletter-title {
+  font-family: Pacifico, cursive;
+  font-weight: 600;
+}
+
+.newsletter-content {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Arial sans-serif;
+}
+
+.newsletter-email-container {
+  margin: auto;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.newsletter-email {
+  width: 100%;
+}
+
+.newsletter-email ::ng-deep button {
+  margin: auto;
+  height: 100%;
+}
