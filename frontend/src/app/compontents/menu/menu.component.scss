@@ -1,21 +1,22 @@
 mat-toolbar {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
+}
+
+.page-name-container {
+  max-width: 370px;
+  min-width: 200px;
+  max-height: 66px;
+  min-height: 42px;
+}
+
+.page-name-container img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 mat-select {
   width: 20%;
-}
-
-.page-name-container {
-  height: 50%;
-  width: 50%;
-}
-
-.page-name-container img {
-  height: auto;
-  width: 100%;
-  vertical-align: middle;
 }
 
 .menu-options {

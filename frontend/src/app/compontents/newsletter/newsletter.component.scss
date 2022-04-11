@@ -4,7 +4,10 @@
 }
 
 .newsletter-text-container {
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+  width: fit-content;
 }
 
 .newsletter-title {
@@ -19,7 +22,6 @@
 }
 
 .newsletter-email-container {
-  margin: auto;
   min-width: 150px;
   max-width: 500px;
   width: 100%;
