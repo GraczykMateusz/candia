@@ -23,7 +23,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import { ProductsComponent } from './compontents/dashboard/products/products.component';
 import {MatTabsModule} from "@angular/material/tabs";
-import { ShoppingCartDialogComponent } from './compontents/shopping-cart-dialog/shopping-cart-dialog.component';
+import { ShoppingBasketDialogComponent } from './compontents/shopping-basket-dialog/shopping-basket-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { PortraitsComponent } from './compontents/dashboard/portraits/portraits.component';
 
@@ -36,7 +36,7 @@ import { PortraitsComponent } from './compontents/dashboard/portraits/portraits.
     NewsletterComponent,
     InformationsComponent,
     ProductsComponent,
-    ShoppingCartDialogComponent,
+    ShoppingBasketDialogComponent,
     PortraitsComponent
   ],
     imports: [

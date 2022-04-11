@@ -10,8 +10,8 @@
   <app-footer></app-footer>
 </div>
 
-<div [@shopping-cart-animation]="showShoppingCart ? 'open' : 'close'" class="shop-cart-container">
-  <button [disabled]="!showShoppingCart" mat-fab color="primary" (click)="openDialog()">
+<div [@shopping-basket-animation]="showShoppingBasket ? 'open' : 'close'" class="shop-basket-container">
+  <button [disabled]="!showShoppingBasket" mat-fab color="primary" (click)="openDialog()">
     <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
   </button>
 </div>
