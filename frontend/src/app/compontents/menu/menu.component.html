@@ -1,12 +1,10 @@
 <mat-toolbar>
-  <div fxFlex="45%">
-    <div class="page-name-container">
-      <img src="assets/page-name.png">
-    </div>
-  </div>
-  <div fxFlex="55%" class="menu-options">
 
-    <div class="search-bar">
+  <div class="domain-img">
+    <img src="assets/page-name.png">
+  </div>
+
+  <div class="menu-container">
       <div class="wrap">
         <div class="search">
           <input type="text" class="search-term" placeholder="{{placeholderText}}">
@@ -21,40 +19,47 @@
             <mat-icon>search</mat-icon>
           </button>
         </div>
-      </div>
     </div>
 
-    <div class="buttons-frame">
+    <div class="small-menu">
       <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
+        <mat-icon>menu</mat-icon>
       </button>
+    </div>
 
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
-      </button>
+    <div class="large-menu">
+      <div class="buttons-container">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
+        </button>
 
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>account_circle</mat-icon>
-      </button>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
+        </button>
 
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <span>Zaloguj się</span>
-          <mat-icon>login</mat-icon>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
         </button>
-        <button mat-menu-item>
-          <span>Zarejestruj się</span>
-          <mat-icon>login</mat-icon>
-        </button>
-        <button mat-menu-item>
-          <span>Zamówienia i zwroty</span>
-          <mat-icon>login</mat-icon>
-        </button>
-        <button mat-menu-item>
-          <span>Moje dane</span>
-          <mat-icon>login</mat-icon>
-        </button>
-      </mat-menu>
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <span>Zaloguj się</span>
+            <mat-icon>login</mat-icon>
+          </button>
+          <button mat-menu-item>
+            <span>Zarejestruj się</span>
+            <mat-icon>login</mat-icon>
+          </button>
+          <button mat-menu-item>
+            <span>Zamówienia i zwroty</span>
+            <mat-icon>login</mat-icon>
+          </button>
+          <button mat-menu-item>
+            <span>Moje dane</span>
+            <mat-icon>login</mat-icon>
+          </button>
+        </mat-menu>
+      </div>
     </div>
   </div>
 </mat-toolbar>
