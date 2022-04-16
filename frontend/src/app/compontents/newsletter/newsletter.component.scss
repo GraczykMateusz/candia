@@ -7,7 +7,6 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 20px;
-  width: fit-content;
 }
 
 .newsletter-title {
@@ -22,16 +21,30 @@
 }
 
 .newsletter-email-container {
-  min-width: 150px;
+  min-width: 200px;
   max-width: 500px;
   width: 100%;
 }
 
 .newsletter-email {
-  width: 100%;
+  width: 70%;
+  display: inline-block;
 }
 
-.newsletter-email ::ng-deep button {
-  margin: auto;
-  height: 100%;
+.newsletter-email input {
+  width: 50%;
+}
+
+.subscribe-button {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
 }

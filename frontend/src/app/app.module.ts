@@ -26,6 +26,7 @@ import {MatTabsModule} from "@angular/material/tabs";
 import { ShoppingBasketDialogComponent } from './compontents/shopping-basket-dialog/shopping-basket-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { PortraitsComponent } from './compontents/dashboard/portraits/portraits.component';
+import { CategoriesComponent } from './compontents/dashboard/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PortraitsComponent } from './compontents/dashboard/portraits/portraits.
     InformationsComponent,
     ProductsComponent,
     ShoppingBasketDialogComponent,
-    PortraitsComponent
+    PortraitsComponent,
+    CategoriesComponent
   ],
     imports: [
         BrowserModule,

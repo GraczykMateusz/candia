@@ -1,17 +1,21 @@
 <div fxLayout="column" fxLayoutAlign="center">
   <app-menu></app-menu>
   <mat-divider></mat-divider>
+
   <router-outlet></router-outlet>
   <mat-divider></mat-divider>
+
   <app-newsletter></app-newsletter>
   <mat-divider></mat-divider>
-  <app-informations></app-informations>
-  <mat-divider></mat-divider>
-  <app-footer></app-footer>
+
+<!--  <app-informations></app-informations>-->
+<!--  <mat-divider></mat-divider>-->
+
+<!--  <app-footer></app-footer>-->
 </div>
 
-<div [@shopping-basket-animation]="showShoppingBasket ? 'open' : 'close'" class="shop-basket-container">
-  <button [disabled]="!showShoppingBasket" mat-fab color="primary" (click)="openDialog()">
-    <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
-  </button>
-</div>
+<!--<div [@shopping-basket-animation]="showShoppingBasket ? 'open' : 'close'" class="shop-basket-container">-->
+<!--  <button [disabled]="!showShoppingBasket" mat-fab color="primary" (click)="openDialog()">-->
+<!--    <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>-->
+<!--  </button>-->
+<!--</div>-->

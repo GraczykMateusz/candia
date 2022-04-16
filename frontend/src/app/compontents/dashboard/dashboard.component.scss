@@ -20,6 +20,11 @@ app-products {
   background-color: white;
 }
 
+app-categories {
+  margin: 2vh 8vw 2vh 8vw;
+  background-color: white;
+}
+
 @media (max-width: 555px) {
   .dashboard-img-container {
     flex-direction: column;

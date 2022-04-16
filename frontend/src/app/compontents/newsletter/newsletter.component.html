@@ -1,4 +1,4 @@
-<div fxFlex="row" fxLayoutAlign="center" class="background">
+<div fxLayout="row wrap" fxLayoutAlign="center" class="background">
   <div class="newsletter-text-container">
     <div class="newsletter-title">Zapisz się do naszego newslettera</div>
     <div class="newsletter-content">będziesz otrzymywać informacje o promocjach i kuponach na bieżąco!</div>
@@ -6,17 +6,9 @@
 
   <form class="newsletter-email-container">
     <mat-form-field class="newsletter-email" appearance="fill">
-      <mat-label>Email</mat-label>
-      <input type="email" matInput placeholder="Wprowadź swój email">
-      <button mat-button matSuffix>
-        Subskrybuj
-      </button>
-<!--      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">-->
-<!--        Please enter a valid email address-->
-<!--      </mat-error>-->
-<!--      <mat-error *ngIf="emailFormControl.hasError('required')">-->
-<!--        Email is <strong>required</strong>-->
-<!--      </mat-error>-->
+      <mat-label>Wprowadź swój email</mat-label>
+      <input type="email" matInput [formControl]="emailFormControl">
     </mat-form-field>
+    <button mat-raised-button color="primary" class="subscribe-button" type="button" (click)="test()">Subskrybuj</button>
   </form>
 </div>
