@@ -55,17 +55,23 @@ ng-image-slider {
 }
 
 .product-overview {
-  overflow: hidden;
-  text-overflow: ellipsis;
+
 }
 
 .product-name {
-  margin: 2vh 2vw 2vh 2vw;
+  margin: 1vh 2vw 1vh 2vw;
   font-size: 40px;
   font-weight: 500;
 }
 
 .product-description {
   margin: 2vh 2vw 2vh 2vw;
-  height: 400px;
+  height: 330px;
+  display: -webkit-box;
+  max-width: 400px;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.625em;
 }
