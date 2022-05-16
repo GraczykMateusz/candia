@@ -4,16 +4,17 @@
 }
 
 .title {
-  font-family: 'Quicksand',sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 500;
   vertical-align: center;
+  text-align: center;
   display: inline-flex;
 }
 
-.title::after, .title::before  {
+.title::after, .title::before {
   content: " ";
   width: 45px;
   height: 1px;
