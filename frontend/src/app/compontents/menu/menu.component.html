@@ -1,28 +1,28 @@
 <mat-toolbar>
 
   <div class="domain-letter-img">
-    <img src="../../../assets/domain-letter.png">
+    <img src="assets/img/domain/domain-letter.png">
   </div>
 
   <div class="domain-img">
-    <img src="../../../assets/domain.png">
+    <img src="assets/img/domain/domain.png">
   </div>
 
   <div fxFlex="80" class="menu-container">
-      <div class="wrap">
-        <div class="search">
-          <input type="text" class="search-term" placeholder="{{placeholderText}}">
-          <div class="category">
-            <mat-select [formControl]="position" disableOptionCentering>
-              <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
-                {{positionOption}}
-              </mat-option>
-            </mat-select>
-          </div>
-          <button mat-icon-button class="search-button">
-            <mat-icon>search</mat-icon>
-          </button>
+    <div class="wrap">
+      <div class="search">
+        <input type="text" class="search-term" placeholder="{{placeholderText}}">
+        <div class="category">
+          <mat-select [formControl]="position" disableOptionCentering>
+            <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
+              {{positionOption}}
+            </mat-option>
+          </mat-select>
         </div>
+        <button mat-icon-button class="search-button">
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
     </div>
 
     <div class="small-menu">
