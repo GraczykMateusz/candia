@@ -67,11 +67,6 @@ input::placeholder {
   background-color: #fff;
 }
 
-::ng-deep .mat-select-content {
-  display: inline;
-  justify-content: flex-end;
-}
-
 .category mat-select {
   width: 100%;
   vertical-align: middle;
