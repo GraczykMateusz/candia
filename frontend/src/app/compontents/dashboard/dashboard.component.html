@@ -1,11 +1,42 @@
 <div fxLayout="column">
+
   <div class="dashboard-img-container-style">
     <div class="dashboard-img-container">
-      <img src="assets/dashboard_part_1.jpg"/>
-      <img src="assets/dashboard_part_2.jpg"/>
+      <img src="../../../assets/dashboard_part_1.jpg"/>
+      <img src="../../../assets/dashboard_part_2.jpg"/>
     </div>
   </div>
+
+  <mat-divider></mat-divider>
   <app-categories></app-categories>
+  <mat-divider></mat-divider>
+
+  <app-title [titleText]="'Wybrane dla Ciebie'"></app-title>
+  <mat-divider></mat-divider>
+  <div fxFlex="row" fxLayoutAlign="center center" fxLayoutGap="1vw">
+    <app-hot-deals fxFlex="50"></app-hot-deals>
+    <app-overview fxFlex="50"></app-overview>
+  </div>
+  <mat-divider></mat-divider>
+
+  <app-title [titleText]="'Nasza oferta'"></app-title>
+  <mat-divider></mat-divider>
   <app-products></app-products>
+  <mat-divider></mat-divider>
+
+  <app-title [titleText]="'Ostatnio przeglądane'"></app-title>
+  <mat-divider></mat-divider>
+  <app-history></app-history>
+  <mat-divider></mat-divider>
+
+  <app-title [titleText]="'Społeczności'"></app-title>
+  <mat-divider></mat-divider>
+  <app-social-media></app-social-media>
+  <mat-divider></mat-divider>
+
+  <app-title [titleText]="'Współpraca z markami'"></app-title>
+  <mat-divider></mat-divider>
+  <app-brands></app-brands>
+  <mat-divider></mat-divider>
 </div>
 

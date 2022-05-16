@@ -27,6 +27,10 @@ img:hover {
   border-color: black;
 }
 
+img:hover + .category-title {
+  color: #3BAC44;
+}
+
 @media (max-width: 555px) {
   .category-title {
     display: none;

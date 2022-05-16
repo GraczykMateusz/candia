@@ -1,0 +1,28 @@
+.img-container {
+  max-height: 480px;
+  max-width: 300px + 16px + 16px;
+  margin: 4px 8px 4px 8px;
+}
+
+.img-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.text {
+  color: #8f8f8f;
+  font-size: 1.125rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.text-title {
+  color: #222222;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  text-align: center;
+}

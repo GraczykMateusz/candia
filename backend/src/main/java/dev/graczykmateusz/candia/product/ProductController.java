@@ -12,23 +12,5 @@ class ProductController {
 
     private final ProductService productService;
 
-//    @PostMapping
-//    void addProduct(@RequestParam) {
-//
-//    }
 
-    @GetMapping
-    List<Product> getProducts() {
-        return productService.getProducts();
-    }
-
-    @GetMapping("/{id}")
-    Product getProductById(@RequestParam Long id) {
-        return productService.getProductById(id);
-    }
-
-    @GetMapping("/search")
-    List<Product> getProductsBySearchCommand(@RequestBody ProductSearchCommand command) {
-        return productService.getProductsBySearchCommand(command);
-    }
 }

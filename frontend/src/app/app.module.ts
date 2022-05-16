@@ -18,15 +18,23 @@ import {MatBadgeModule} from "@angular/material/badge";
 import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatExpansionModule} from "@angular/material/expansion";
-import { InformationsComponent } from './compontents/informations/informations.component';
+import {InformationsComponent} from './compontents/informations/informations.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
-import { ProductsComponent } from './compontents/dashboard/products/products.component';
+import {ProductsComponent} from './compontents/dashboard/products/products.component';
 import {MatTabsModule} from "@angular/material/tabs";
-import { ShoppingBasketDialogComponent } from './compontents/shopping-basket-dialog/shopping-basket-dialog.component';
+import {ShoppingBasketDialogComponent} from './compontents/shopping-basket-dialog/shopping-basket-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
-import { PortraitsComponent } from './compontents/dashboard/portraits/portraits.component';
-import { CategoriesComponent } from './compontents/dashboard/categories/categories.component';
+import {PortraitsComponent} from './compontents/dashboard/portraits/portraits.component';
+import {CategoriesComponent} from './compontents/dashboard/categories/categories.component';
+import {HotDealsComponent} from './compontents/dashboard/hot-deals/hot-deals.component';
+import {NgImageSliderModule} from "ng-image-slider";
+import { HistoryComponent } from './compontents/dashboard/history/history.component';
+import { TitleComponent } from './compontents/dashboard/title/title.component';
+import {MatSliderModule} from "@angular/material/slider";
+import {OverviewComponent} from "./compontents/dashboard/overview/overview.component";
+import { SocialMediaComponent } from './compontents/dashboard/social-media/social-media.component';
+import { BrandsComponent } from './compontents/dashboard/brands/brands.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +47,13 @@ import { CategoriesComponent } from './compontents/dashboard/categories/categori
     ProductsComponent,
     ShoppingBasketDialogComponent,
     PortraitsComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    HotDealsComponent,
+    HistoryComponent,
+    TitleComponent,
+    OverviewComponent,
+    SocialMediaComponent,
+    BrandsComponent
   ],
     imports: [
         BrowserModule,
@@ -48,6 +62,7 @@ import { CategoriesComponent } from './compontents/dashboard/categories/categori
         HttpClientModule,
         FlexLayoutModule,
         ReactiveFormsModule,
+        NgImageSliderModule,
         MatToolbarModule,
         MatIconModule,
         MatMenuModule,
@@ -59,7 +74,8 @@ import { CategoriesComponent } from './compontents/dashboard/categories/categori
         MatCardModule,
         MatDividerModule,
         MatTabsModule,
-        MatDialogModule
+        MatDialogModule,
+        MatSliderModule
     ],
   providers: [],
   bootstrap: [AppComponent]

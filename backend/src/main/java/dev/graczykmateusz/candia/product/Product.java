@@ -1,6 +1,5 @@
 package dev.graczykmateusz.candia.product;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -8,7 +7,6 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "product")
-@Data
 @NoArgsConstructor
 class Product {
     @Id
@@ -20,6 +18,9 @@ class Product {
     private String name;
 
     @Column(nullable = false)
+    private BigDecimal oldPrice;
+
+    @Column(nullable = false)
     private BigDecimal price;
 
     @Column(nullable = false)
@@ -27,4 +28,7 @@ class Product {
 
     @Column(nullable = false)
     private String description;
+
+    @Column(nullable = false)
+    private String pathToImage;
 }

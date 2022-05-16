@@ -40,3 +40,13 @@ mat-toolbar {
 .info-content-and-icons-container {
   height: fit-content;
 }
+
+.box {
+  flex-direction: row;
+}
+
+@media (max-width: 400px) {
+  .box {
+    flex-direction: column;
+  }
+}

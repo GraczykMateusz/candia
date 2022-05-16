@@ -1,0 +1,43 @@
+<mat-card fxLayout="row" fxLayoutAlign="center center" class="container">
+  <div fxLayout="column" fxLayoutAlign=" center">
+    <ng-image-slider fxFlex
+                     [images]="imageObject"
+                     [slideImage]="1"
+                     [infinite]="true"
+                     [imagePopup]="false"
+                     [imageSize]="{width: '280px', height: '280px'}">
+    </ng-image-slider>
+    <div fxFlex fxLayout="column" fxLayoutAlign="start center">
+      <div fxFlex class="old-price">
+        123.25 zł
+      </div>
+      <div fxFlex class="new-price">
+        99.99 zł
+      </div>
+      <div fxFlex class="timer">
+        <span class="timer-field">00</span>
+        <span class="timer-colon">:</span>
+        <span class="timer-field">00</span>
+        <span class="timer-colon">:</span>
+        <span class="timer-field">00</span>
+      </div>
+    </div>
+  </div>
+  <div class="product-overview">
+    <div class="product-name">
+      product-name
+    </div>
+    <div class="product-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis purus auctor lacus laoreet porta. Aenean urna
+      orci, varius efficitur ullamcorper ac, iaculis non leo. Mauris efficitur elit eget interdum facilisis. Praesent
+      vestibulum quam sed quam feugiat pellentesque. Nunc eu ultrices diam. Vestibulum elementum molestie urna a feugiat.
+      Vestibulum viverra consequat pulvinar. Sed rutrum, mi a scelerisque tempor, diam sapien tristique ex, vel volutpat
+      lorem arcu at nulla.
+
+      Vivamus tincidunt tincidunt lacinia. Maecenas at lacinia odio, quis euismod velit. Morbi congue nisi id lorem
+      vulputate convallis. Proin accumsan tristique justo eu viverra. Donec et est eget erat venenatis ultrices sed ut
+      orci. Morbi auctor metus quis dolor feugiat, vel bibendum magna egestas. Phasellus mauris mauris, auctor ac laoreet
+      vel, lobortis id leo. Aenean vel scelerisque magna, a finibus orci. In ac vulputate orci, in dapibus enim.
+    </div>
+  </div>
+</mat-card>
