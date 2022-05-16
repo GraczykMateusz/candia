@@ -97,8 +97,8 @@ mat-icon {
 
 .domain-letter-img {
   display: inline-flex;
-  max-width: 57px;
-  max-height: 46px;
+  width: 51px;
+  height: 46px;
   border-style: solid;
   border-color: #3BAC44;
   border-width: 2px;
@@ -107,14 +107,24 @@ mat-icon {
 .domain-img {
   display: inline-flex;
   max-width: 360px;
-  max-height: 56px;
+  max-height: 50px;
   min-width: 200px;
   min-height: 42px;
 }
 
-.domain-img img, .domain-letter-img img {
+.domain-img img {
   width: 100%;
   height: auto;
+  min-width: 360px;
+  min-height: 50px;
+  vertical-align: middle;
+}
+
+.domain-letter-img img {
+  width: 100%;
+  height: auto;
+  min-width: 51px;
+  min-height: 46px;
   vertical-align: middle;
 }
 
