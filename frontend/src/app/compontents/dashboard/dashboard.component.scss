@@ -21,7 +21,7 @@ app-products {
 }
 
 app-categories {
-  margin: 2vh 7vw 2vh 7vw;
+  margin: 2vh 2vw 2vh 2vw;
   background-color: white;
 }
 
@@ -37,7 +37,7 @@ app-brands {
   margin: 2vh 0 2vh 2vw;
 }
 
-@media (max-width: 555px) {
+@media (max-width: 690px) {
   .dashboard-img-container {
     flex-direction: column;
     max-height: 934px;
@@ -47,7 +47,7 @@ app-brands {
   }
 }
 
-@media (min-width: 555px) {
+@media (min-width: 690px) {
   .dashboard-img-container {
     flex-direction: row;
     max-height: 467px;

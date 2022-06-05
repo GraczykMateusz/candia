@@ -135,24 +135,7 @@ mat-icon {
   vertical-align: middle;
 }
 
-@media (min-width: 555px) {
-  .large-menu {
-    display: inline-flex;
-    justify-content: flex-end;
-  }
-  .small-menu {
-    display: none;
-  }
-}
-
 @media (max-width: 555px) {
-  .large-menu {
-    display: none;
-  }
-  .small-menu {
-    display: inline-flex;
-    justify-content: flex-end;
-  }
   .search .mat-icon-button {
     border-radius: 5px;
   }

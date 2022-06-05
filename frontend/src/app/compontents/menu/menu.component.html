@@ -27,45 +27,37 @@
       </div>
     </div>
 
-    <div class="small-menu">
+    <div class="buttons-container">
       <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
+        <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
       </button>
-    </div>
 
-    <div class="large-menu">
-      <div class="buttons-container">
-        <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon matBadge="15" matBadgeColor="accent">favorite</mat-icon>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
+      </button>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <span>Zaloguj się</span>
+          <mat-icon>login</mat-icon>
         </button>
-
-        <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon matBadge="15" matBadgeColor="warn">shopping_basket</mat-icon>
+        <button mat-menu-item>
+          <span>Zarejestruj się</span>
+          <mat-icon>login</mat-icon>
         </button>
-
-        <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon>account_circle</mat-icon>
+        <button mat-menu-item>
+          <span>Zamówienia i zwroty</span>
+          <mat-icon>login</mat-icon>
         </button>
-
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>
-            <span>Zaloguj się</span>
-            <mat-icon>login</mat-icon>
-          </button>
-          <button mat-menu-item>
-            <span>Zarejestruj się</span>
-            <mat-icon>login</mat-icon>
-          </button>
-          <button mat-menu-item>
-            <span>Zamówienia i zwroty</span>
-            <mat-icon>login</mat-icon>
-          </button>
-          <button mat-menu-item>
-            <span>Moje dane</span>
-            <mat-icon>login</mat-icon>
-          </button>
-        </mat-menu>
-      </div>
+        <button mat-menu-item>
+          <span>Moje dane</span>
+          <mat-icon>login</mat-icon>
+        </button>
+      </mat-menu>
     </div>
   </div>
 </mat-toolbar>
