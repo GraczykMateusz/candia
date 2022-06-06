@@ -25,16 +25,16 @@ app-categories {
   background-color: white;
 }
 
-app-overview {
-  margin: 2vh 2vw 2vh 0;
-}
-
-app-hot-deals {
-  margin: 2vh 0 2vh 2vw;
-}
-
 app-brands {
-  margin: 2vh 0 2vh 2vw;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+.hot-deals-overview {
+  margin: 2vh 2vw 2vh 2vw;
+  gap: 1vw !important;
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: row !important;
 }
 
 @media (max-width: 690px) {
@@ -54,5 +54,16 @@ app-brands {
   }
   .dashboard-img-container img {
     width: 50%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .hot-deals-overview {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  app-overview {
+    margin-top: 14px !important;
   }
 }

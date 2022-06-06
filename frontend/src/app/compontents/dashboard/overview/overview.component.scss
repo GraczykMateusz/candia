@@ -2,11 +2,12 @@
   max-height: 480px;
   max-width: 300px + 16px + 16px;
   margin: 4px 8px 4px 8px;
+  min-height: 467px;
 }
 
 .img-container img {
-  height: 300px;
-  width: 300px;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
 }
 
